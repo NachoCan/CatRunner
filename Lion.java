@@ -2,26 +2,33 @@ import java.awt.Color;
  
 public class Lion extends Cat
 {
-	private color maneColor;
-	public Lion (String n, int a, String o, color mC)
+	private Color maneColor;
+	
+	public Lion (String n, int a, String o, Color mC)
 	{	
 		super (n, a, o);
 		maneColor = mC;
 		
 	}
+	public Lion()
+	{
+		setAge(1);
+		setName("a");
+		setOwner("a");
+		setManeColor(Color.YELLOW);
+	}
 	public Color getColor ()
 	{
-		return maneColor
+		return maneColor;
 	}
-	public setManeColor (Color c)
+	public void setManeColor (Color c)
 	{
-		maneColor = c
+		maneColor = c;
 	}
 	
-	
-
-}
-public class roar()
-{
-	System.out.println(name + " just roared.");
+	public void roar()
+	{
+		
+		System.out.println (getName() + " just roared.");
+	}
 }
